@@ -22,7 +22,7 @@
                 <!-- Campo Director -->
                 <div class="mb-3">
                     <label for="director" class="block text-lg sm:text-base md:text-sm font-medium">Director</label>
-                    <input type="text" name="director" id="director" class="ftext-black orm-input mt-2 block w-full rounded-md border border-gray-300 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-green-500 text-lg sm:text-base md:text-sm" required>
+                    <input type="text" name="director" id="director" class="text-black form-input mt-2 block w-full rounded-md border border-gray-300 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-green-500 text-lg sm:text-base md:text-sm" required>
                 </div>
 
                 <!-- Campo Cast -->
@@ -47,6 +47,13 @@
                 <div class="mb-3">
                     <label for="description" class="block text-lg sm:text-base md:text-sm font-medium">Description</label>
                     <textarea name="description" id="description" class="text-black form-input mt-2 block w-full rounded-md border border-gray-300 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-green-500 text-lg sm:text-base md:text-sm" rows="4" required></textarea>
+                </div>
+
+                <!-- Botón de retroceso -->
+                <div class="flex justify-center">
+                    <a href="{{ route('films.index') }}" class="w-full py-3 bg-gray-500 text-white font-semibold rounded-lg hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-gray-500 transition duration-300 ease-in-out text-lg sm:text-base md:text-sm text-center">
+                        Cancelar
+                    </a>
                 </div>
 
                 <!-- Botón Submit -->

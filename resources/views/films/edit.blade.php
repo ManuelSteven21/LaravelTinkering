@@ -44,6 +44,13 @@
                     <textarea name="description" id="description" class="form-input mt-2 block w-full rounded-md border border-gray-300 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-green-500 text-lg sm:text-base md:text-sm text-black" rows="4" required>{{ $film->description }}</textarea>
                 </div>
 
+                <!-- Botón de retroceso -->
+                <div class="flex justify-center">
+                    <a href="{{ route('films.index') }}" class="w-full py-3 bg-gray-500 text-white font-semibold rounded-lg hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-gray-500 transition duration-300 ease-in-out text-lg sm:text-base md:text-sm text-center">
+                        Cancelar
+                    </a>
+                </div>
+
                 <!-- Botón Submit -->
                 <button type="submit" class="w-full py-3 bg-green-500 text-white font-semibold rounded-lg hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-500 transition duration-300 ease-in-out text-lg sm:text-base md:text-sm text-black">
                     Update
