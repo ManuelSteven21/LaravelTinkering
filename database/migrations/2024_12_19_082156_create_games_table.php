@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('title');
             $table->string('director');
-            $table->string('rating');
+            $table->decimal('rating', 3, 1);
             $table->string('genre');
             $table->integer('year');
             $table->text('description');
